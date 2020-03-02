@@ -1,7 +1,7 @@
-<h1>EventBite</h1>
+<h1>All Events</h1>
 
 <% for zebra in @events %>
     <p>
-        <a href="#"><%="#{zebra[:title]}"%></a>
+        <a href="/events/<%= zebra[:id] %>"><%="#{zebra[:title]}"%></a>
     </p>
 <% end %>
